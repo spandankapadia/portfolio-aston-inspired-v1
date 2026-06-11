@@ -1,0 +1,25 @@
+{
+  "mode": "edit",
+  "componentId": "415736399778709504",
+  "projectId": "413725066019352576",
+  "selectedRevisionId": "415747530618466304",
+  "jobId": "413725065763500032-external-agent-415747530618466305",
+  "generatedName": "zestily-mountain-9901",
+  "name": "portfolio-aston-inspired-v1",
+  "selectedImages": [],
+  "editableFiles": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "5d095c572323f8fd5bde1de69f81a12b6165a41fe3a8915ffdfb5445225025a7"
+    },
+    {
+      "path": "src/components/generated/PortfolioAstonInspiredV1.tsx",
+      "sha256": "11702cc1bf598780a9eb2f6412ceb32c96ba745b0bdf43a47582abe4b05f0782"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "3af92f9f6b5e93767188381bda25e0b3e26d2885569cffb8b46ff6d8966b1860"
+    }
+  ],
+  "baseRevisionId": "415747530618466304"
+}
