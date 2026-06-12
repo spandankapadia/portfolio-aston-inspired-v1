@@ -24,6 +24,12 @@ interface HighlightPill {
   label: string;
   accent: boolean;
 }
+interface ImpactItem {
+  title: string;
+  description: string;
+  cta: string;
+  href: string;
+}
 const CAPABILITIES: Capability[] = [{
   number: '01',
   title: 'GitHub',
@@ -75,6 +81,17 @@ const HIGHLIGHT_PILLS: HighlightPill[] = [{
 }, {
   label: 'Database and Cloud Technologies',
   accent: false
+}];
+const EXTRACURRICULAR_IMPACT: ImpactItem[] = [{
+  title: 'The Collegian',
+  description: 'Business Manager responsible for budgeting, planning, and supporting student media operations.',
+  cta: 'View Leadership \u2192',
+  href: 'https://www.utoledocollegian.com/'
+}, {
+  title: 'Rocket Motorsports',
+  description: 'Formula SAE contributor supporting vehicle development, fabrication, and testing activities.',
+  cta: 'View Team \u2192',
+  href: '#extracurricular-impact'
 }];
 /**
  * SUB-COMPONENTS
@@ -785,6 +802,97 @@ export const PortfolioAstonInspiredV1 = () => {
               }}>
                     {cap.fileMeta}
                   </div>}
+                </motion.div>
+              </motion.div>)}
+          </div>
+        </div>
+      </section>
+
+      {/* EXTRACURRICULAR IMPACT */}
+      <section id="extracurricular-impact" style={{
+      backgroundColor: bg,
+      padding: '96px 0',
+      transition: 'background 0.3s ease'
+    }}>
+        <div style={{
+        maxWidth: '1200px',
+        margin: '0 auto',
+        padding: '0 24px'
+      }}>
+          <SectionLabel number="05" color="#C0C0C0">Extracurricular Impact</SectionLabel>
+          <h2 style={{
+          fontSize: '48px',
+          fontWeight: 700,
+          letterSpacing: '-0.02em',
+          marginBottom: '64px',
+          color: textPrimary
+        }}>
+            Extracurricular Impact.
+          </h2>
+
+          <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(2, 1fr)',
+          gap: '20px'
+        }} className="max-sm:grid-cols-1">
+            {EXTRACURRICULAR_IMPACT.map((item, index) => <motion.div key={item.title} initial={{
+            opacity: 0,
+            y: 20
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            delay: index * 0.1
+          }}>
+                <motion.div style={{
+              height: '100%',
+              borderRadius: '16px',
+              backgroundColor: cardBg,
+              padding: '32px',
+              boxShadow: cardShadow,
+              transition: 'box-shadow 0.3s ease',
+              cursor: 'default'
+            }} whileHover={{
+              boxShadow: cardShadowHover
+            }}>
+                  <h3 style={{
+                fontSize: '19px',
+                fontWeight: 700,
+                letterSpacing: '-0.01em',
+                color: textPrimary,
+                margin: 0
+              }}>
+                    {item.title}
+                  </h3>
+                  <p style={{
+                marginTop: '12px',
+                fontSize: '15px',
+                lineHeight: 1.65,
+                color: textSecondary,
+                margin: '12px 0 0 0',
+                maxWidth: '560px'
+              }}>
+                    {item.description}
+                  </p>
+                  <a href={item.href} target={item.href.startsWith('http') ? '_blank' : undefined} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined} onMouseEnter={e => {
+                e.currentTarget.style.color = isDark ? '#F8F8F6' : '#145A41';
+              }} onMouseLeave={e => {
+                e.currentTarget.style.color = isDark ? '#C0C0C0' : '#0B3D2E';
+              }} style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                marginTop: '22px',
+                fontSize: '13px',
+                fontWeight: 700,
+                color: isDark ? '#C0C0C0' : '#0B3D2E',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease'
+              }}>
+                    {item.cta}
+                  </a>
                 </motion.div>
               </motion.div>)}
           </div>
