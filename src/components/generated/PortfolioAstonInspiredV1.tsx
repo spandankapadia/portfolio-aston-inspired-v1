@@ -93,6 +93,17 @@ const EXTRACURRICULAR_IMPACT: ImpactItem[] = [{
   cta: 'View Team \u2192',
   href: '#experience'
 }];
+const visuallyHiddenStyle: React.CSSProperties = {
+  position: 'absolute',
+  width: 1,
+  height: 1,
+  padding: 0,
+  margin: -1,
+  overflow: 'hidden',
+  clip: 'rect(0, 0, 0, 0)',
+  whiteSpace: 'nowrap',
+  border: 0
+};
 /**
  * SUB-COMPONENTS
  */
@@ -502,7 +513,7 @@ export const PortfolioAstonInspiredV1 = () => {
       margin: '0 auto',
       padding: '0 24px'
     }}>
-        <nav aria-label="Portfolio sections" className="sr-only">
+        <nav aria-label="Portfolio sections" style={visuallyHiddenStyle}>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
           <a href="#experience">Experience</a>
@@ -686,7 +697,7 @@ export const PortfolioAstonInspiredV1 = () => {
       padding: '96px 0',
       transition: 'background 0.3s ease'
     }}>
-        <span id="skills" className="sr-only">Skills</span>
+        <span id="skills" style={visuallyHiddenStyle}>Skills</span>
         <div style={{
         maxWidth: '1200px',
         margin: '0 auto',
