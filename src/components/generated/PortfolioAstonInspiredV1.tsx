@@ -91,7 +91,7 @@ const EXTRACURRICULAR_IMPACT: ImpactItem[] = [{
   title: 'Rocket Motorsports',
   description: 'Formula SAE contributor supporting vehicle development, fabrication, and testing activities.',
   cta: 'View Team \u2192',
-  href: '#extracurricular-impact'
+  href: '#experience'
 }];
 /**
  * SUB-COMPONENTS
@@ -180,9 +180,11 @@ const NavItem = ({
     </a>;
 };
 const ContactDropdown = ({
-  isDark
+  isDark,
+  id
 }: {
   isDark: boolean;
+  id?: string;
 }) => {
   const [open, setOpen] = React.useState(false);
   const text = isDark ? '#F8F8F6' : '#072A1F';
@@ -201,7 +203,7 @@ const ContactDropdown = ({
     href: 'tel:+15674696307',
     icon: Phone
   }];
-  return <div style={{
+  return <div id={id} style={{
     position: 'relative'
   }} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)} onFocus={() => setOpen(true)} onBlur={event => {
     if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
@@ -473,7 +475,7 @@ export const PortfolioAstonInspiredV1 = () => {
           alignItems: 'center',
           gap: '18px'
         }}>
-            <ContactDropdown isDark={isDark} />
+            <ContactDropdown id="contact" isDark={isDark} />
             <div className="hidden items-center gap-2 md:flex">
               <div style={{
               width: 8,
@@ -500,6 +502,13 @@ export const PortfolioAstonInspiredV1 = () => {
       margin: '0 auto',
       padding: '0 24px'
     }}>
+        <nav aria-label="Portfolio sections" className="sr-only">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
         {/* HERO */}
         <section style={{
@@ -672,11 +681,12 @@ export const PortfolioAstonInspiredV1 = () => {
       </main>
 
       {/* TECHNICAL HIGHLIGHTS */}
-      <section id="process" style={{
+      <section id="projects" style={{
       backgroundColor: sectionBg,
       padding: '96px 0',
       transition: 'background 0.3s ease'
     }}>
+        <span id="skills" className="sr-only">Skills</span>
         <div style={{
         maxWidth: '1200px',
         margin: '0 auto',
@@ -698,7 +708,7 @@ export const PortfolioAstonInspiredV1 = () => {
           gridTemplateColumns: 'repeat(4, 1fr)',
           gap: '20px'
         }} className="max-lg:grid-cols-2 max-sm:grid-cols-1">
-            {CAPABILITIES.map((cap, index) => <motion.div key={cap.number} initial={{
+            {CAPABILITIES.map((cap, index) => <motion.div key={cap.number} id={cap.title === 'Resume' ? 'resume' : undefined} initial={{
             opacity: 0,
             y: 20
           }} whileInView={{
@@ -809,7 +819,7 @@ export const PortfolioAstonInspiredV1 = () => {
       </section>
 
       {/* EXTRACURRICULAR IMPACT */}
-      <section id="extracurricular-impact" style={{
+      <section id="experience" style={{
       backgroundColor: bg,
       padding: '96px 0',
       transition: 'background 0.3s ease'
