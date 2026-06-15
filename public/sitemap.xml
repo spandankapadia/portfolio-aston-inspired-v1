@@ -4,24 +4,4 @@
     <loc>https://spandankapadia.com/</loc>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://spandankapadia.com/#projects</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://spandankapadia.com/#skills</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://spandankapadia.com/#experience</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://spandankapadia.com/#resume</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://spandankapadia.com/#contact</loc>
-    <priority>0.6</priority>
-  </url>
 </urlset>

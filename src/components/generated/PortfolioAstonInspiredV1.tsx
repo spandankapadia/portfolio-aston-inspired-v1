@@ -91,7 +91,7 @@ const EXTRACURRICULAR_IMPACT: ImpactItem[] = [{
   title: 'Rocket Motorsports',
   description: 'Formula SAE contributor supporting vehicle development, fabrication, and testing activities.',
   cta: 'View Team \u2192',
-  href: '#experience'
+  href: 'https://spandankapadia.com/#experience'
 }];
 const visuallyHiddenStyle: React.CSSProperties = {
   position: 'absolute',
@@ -455,7 +455,7 @@ export const PortfolioAstonInspiredV1 = () => {
         boxShadow: scrolled ? cardShadow : 'none'
       }}>
           {/* Brand */}
-          <a href="#" aria-label="Spandan Kapadia — Home" style={{
+          <a href="https://spandankapadia.com/" aria-label="Spandan Kapadia — Home" style={{
           textDecoration: 'none',
           display: 'inline-flex',
           alignItems: 'center',
@@ -514,11 +514,11 @@ export const PortfolioAstonInspiredV1 = () => {
       padding: '0 24px'
     }}>
         <nav aria-label="Portfolio sections" style={visuallyHiddenStyle}>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#resume">Resume</a>
-          <a href="#contact">Contact</a>
+          <a href="https://spandankapadia.com/#projects">Projects</a>
+          <a href="https://spandankapadia.com/#skills">Skills</a>
+          <a href="https://spandankapadia.com/#experience">Experience</a>
+          <a href="https://spandankapadia.com/#resume">Resume</a>
+          <a href="https://spandankapadia.com/#contact">Contact</a>
         </nav>
 
         {/* HERO */}
