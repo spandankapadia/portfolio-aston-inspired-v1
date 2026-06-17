@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Spandan Kapadia portfolio preview</title>
+  <desc id="desc">British Racing Green preview image for Spandan Kapadia's cybersecurity and information technology portfolio.</desc>
+  <rect width="1200" height="630" fill="#0B3D2E"/>
+  <circle cx="214" cy="178" r="10" fill="#F8F8F6"/>
+  <circle cx="304" cy="245" r="10" fill="#F8F8F6"/>
+  <circle cx="196" cy="334" r="10" fill="#F8F8F6"/>
+  <circle cx="338" cy="384" r="10" fill="#F8F8F6"/>
+  <circle cx="456" cy="290" r="10" fill="#F8F8F6"/>
+  <path d="M214 178L304 245L456 290M304 245L196 334L338 384L456 290M304 245L338 384" stroke="#C0C0C0" stroke-width="5" stroke-linecap="round"/>
+  <text x="560" y="255" fill="#F8F8F6" font-family="Inter, Arial, sans-serif" font-size="68" font-weight="700">Spandan Kapadia</text>
+  <text x="560" y="330" fill="#D8E4D1" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="500">Cybersecurity &amp; Information Technology Portfolio</text>
+  <text x="560" y="394" fill="#C0C0C0" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="400">Software projects - GitHub - Vercel - Technical documentation</text>
+</svg>
