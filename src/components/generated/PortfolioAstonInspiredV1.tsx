@@ -703,13 +703,13 @@ export const PortfolioAstonInspiredV1 = () => {
         margin: '0 auto',
         padding: '0 24px'
       }}>
-          <SectionLabel number="004" color="#C0C0C0">Technical Highlights</SectionLabel>
+          <SectionLabel number="004" color={isDark ? '#C0C0C0' : '#004225'}>Technical Highlights</SectionLabel>
           <h2 style={{
           fontSize: '48px',
           fontWeight: 700,
           letterSpacing: '-0.02em',
           marginBottom: '64px',
-          color: textPrimary
+          color: isDark ? '#F8F8F6' : '#202124'
         }}>
             Technical Highlights.
           </h2>
