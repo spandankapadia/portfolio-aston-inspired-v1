@@ -423,7 +423,7 @@ export const PortfolioAstonInspiredV1 = () => {
     minHeight: '100vh',
     background: bg,
     color: textPrimary,
-    fontFamily: "'Inter', 'Google Sans', system-ui, sans-serif",
+    fontFamily: "Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif",
     transition: 'background 0.3s ease, color 0.3s ease'
   }}>
       {/* NAV */}
