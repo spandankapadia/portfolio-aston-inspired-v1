@@ -1,0 +1,19 @@
+# Spandan Kapadia
+
+> Professional portfolio for Spandan Kapadia, an Information Technology Engineering student at the University of Toledo focused on cybersecurity, software projects, API security, database security, GitHub, Vercel, technical SEO, and technical documentation.
+
+## Primary Pages
+
+- [Homepage](https://spandankapadia.com/)
+- [Resume Section](https://spandankapadia.com/#resume)
+- [Projects Section](https://spandankapadia.com/#projects)
+- [Contact Section](https://spandankapadia.com/#contact)
+
+## Discovery Files
+
+- [Sitemap](https://spandankapadia.com/sitemap.xml)
+- [Robots](https://spandankapadia.com/robots.txt)
+
+## Site Notes
+
+This website presents Spandan Kapadia's technical highlights, academic achievements, resume, coding practice, extracurricular impact, and professional contact information. It is intended for recruiters, hiring managers, search engines, and AI browsing agents that need a concise overview of the portfolio structure and canonical URLs.
